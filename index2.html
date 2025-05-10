@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Spotify Clone Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.legal-links a {
+    display: block;
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+header input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.header-buttons button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.popular-artists, .popular-albums {
+    margin-top: 20px;
+}
+
+.artist-list, .album-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.artist, .album {
+    text-align: center;
+    min-width: 120px;
+}
+
+.artist img, .album img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artist span, .album span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">Spotify</div>
+            <nav>
+                <button>Create Playlist</button>
+                <button>Browse Podcasts</button>
+            </nav>
+            <div class="legal-links">
+                <a href="#">Legal</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header>
+                <input type="text" placeholder="What do you want to play?">
+                <div class="header-buttons">
+                    <button>Install App</button>
+                    <button>Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </header>
+            <section class="popular-artists">
+                <h2>Popular Artists</h2>
+                <div class="artist-list">
+                    <div class="artist"><img src="pritam.jpg" alt="Pritam"><span>Pritam</span></div>
+                    <div class="artist"><img src="arijit.jpg" alt="Arijit Singh"><span>Arijit Singh</span></div>
+                    <div class="artist"><img src="sachin-jigar.jpg" alt="Sachin-Jigar"><span>Sachin-Jigar</span></div>
+                    <div class="artist"><img src="rahman.jpg" alt="A.R. Rahman"><span>A.R. Rahman</span></div>
+                    <div class="artist"><img src="vishal-shekhar.jpg" alt="Vishal-Shekhar"><span>Vishal-Shekhar</span></div>
+                    <div class="artist"><img src="atif.jpg" alt="Atif Aslam"><span>Atif Aslam</span></div>
+                </div>
+            </section>
+            <section class="popular-albums">
+                <h2>Popular Albums and Singles</h2>
+                <div class="album-list">
+                    <div class="album"><img src="glory.jpg" alt="Glory"><span>Glory - Yo Yo Honey Singh</span></div>
+                    <div class="album"><img src="aashiqui2.jpg" alt="Aashiqui 2"><span>Aashiqui 2 - Mithoon, Ankit Tiwari</span></div>
+                    <div class="album"><img src="yjhd.jpg" alt="Yeh Jawaani Hai Deewani"><span>YJHD - Pritam</span></div>
+                    <div class="album"><img src="who.jpg" alt="Who (Remixes)"><span>Who (Remixes) - Jimin</span></div>
+                    <div class="album"><img src="memories.jpg" alt="Making Memories"><span>Making Memories - Karan Aujla</span></div>
+                    <div class="album"><img src="mismatched.jpg" alt="Mismatched Season 3"><span>Mismatched Season 3</span></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

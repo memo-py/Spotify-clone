@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.left{
+    height: 100vh;
+    position: fixed;
+    width: 20vw;
+    top: 7%;
+    z-index: 10;
+    border-right: 10px solid black;
+
+
+}
+
+
+.right{
+    position: absolute;
+    left:25%;
+    top: 7%;
+    overflow-y:hidden;
+    height: calc(100vh-7vh);
+    width: calc(100vw-25vw);    
+    margin-left: 10px;
+    border-radius: 10px;
+    border-left: 10px solid black;
+}
+
+.home ul li{
+    display: flex;
+    width: 14px;
+    list-style: none;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+
+}
+.home{
+    height: 7vh;
+    position: fixed;
+    width: 100%;
+    z-index:5 ;
+}
+
+.home-icon{
+    width:50px;
+    height: 50px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% ;
+    background-color: #191717;
+}
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    font-weight: bold;
+    align-items: center;
+}
+.heading img{
+    width: 30px;
+}
+.links a {
+    margin: 10px 15px 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+  
+
+}
+.install{
+    justify-content: center;
+}
+.search{
+    margin-left: 1px;
+    padding: 1px;
+
+}
+
+.links a:last-child {
+    margin-right: 0; /* Prevent extra space at the end */
+}
+button {
+    display: inline-flex;
+    align-items: center;
+}
+
+button img {
+    margin-right: 5px; /* Adjust space between image and text */
+}
+/* Remove bullets from all unordered lists in specific sections */
+.company ul, .communities ul, .UsefulLinks ul, .plans ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.company a, .communities a, .plans a, .UsefulLinks a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.company a:hover, .communities a:hover, .plans a:hover, .UsefulLinks a:hover {
+    text-decoration: dashed;
+}
+
+/* Optional: You can also add some spacing between the links */
+.company ul li, .communities ul li, .UsefulLinks ul li, .plans ul li {
+    margin-bottom: 8px;
+}
+.bar input{
+    width: 30vw;
+    height:3vh;
+}
+
+.play-btn-wrapper {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #32CD32;
+    color: black;
+    position: relative;
+    top:-30%;
+    left: 75%;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover .play-btn-wrapper {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.play-btn-wrapper:hover {
+    animation: scalePlayButton 0.1s forwards, changeColor 0.3s forwards;
+}
+
+@keyframes scalePlayButton {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.04);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #32CD32;
+    }
+    100% {
+        background-color: #69be69;
+    }
+}
+
+.play-button {
+    font-size: 23px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+.gradient-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;  /* Ensures it starts from the very left */
+    width: 100%;
+    background: linear-gradient(to right, #af2896, #509bf5); /* Pink to Blue Gradient */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly
+    ;
+    align-items:flex-start;
+    font-family: Arial, sans-serif;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* If your left sidebar is fixed, add margin or padding */
+.sidebar {
+    width: 250px; /* Example width */
+    position: fixed;
+    height: 100%;
+    background-color: black;
+}
+
+.main-content {
+    margin-left: 250px; /* Same as sidebar width */
+}
+
+.gradient-footer {
+   
+    width: 100vw;; /* Adjust to prevent overlap */
+}
+
+
+
+
+
+/* Basic navbar style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  

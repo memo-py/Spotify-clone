@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player: Music for </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/png" href="spotify.ico">
+
+    
+</head>
+
+<body>
+
+    <div class="home bg-black flex items-center space-between">
+
+        <div class="outer-logo flex justify-start ">
+
+            <div class="logo">
+                <img class="invert p-2 " src="logo.svg" alt="Spotify logo">
+            </div>
+        </div>
+
+
+        <div class=" outer-search rounded2 bg-black flex  items-center mL space-evenly">
+            <div class="home-icon">
+                <img class="invert img-small p-1" src="home.svg" alt="home">
+            </div>
+
+
+            <div class="search flex rounded2 bg-grey2 items-center  ">
+
+
+
+
+
+                <div class="search">
+                    <img class="invert img-smaller p-1 tx-grey3 " src="search.svg" alt="search">
+                </div>
+
+
+                <div class="bar">
+                    <input class="bg-grey2 small tx-grey3 no-Decoration right-border " type="text"
+                        placeholder="What do you want to play?" style="width: 21vw;">
+                </div>
+
+                <div class="input">
+                    <img src="browse.svg" class="img-smaller invert p-1 tx-grey3" alt="browse">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="outer-premium flex  ">
+
+            <div class="premium flex items-center space-between gap1 right-bordervtxt-clr">
+                <button class=" invert no-Decoration bold m-1 txt-clr">Premium</button>
+                <button class=" invert no-Decoration bold m-1 txt-clr">Support</button>
+                <button class=" invert no-Decoration bold m-1 txt-clr">Download</button>
+            </div>
+
+            <div class="install flex items-center m-1">
+
+                <img src="install.svg" class="invert img-smaller justify-start" alt="install">
+                <p class="tx-grey3 m-1">Install App</p>
+                <button class="bold bg-black m-1 p-1 no-Decoration tx-grey3 ">Sign Up</button>
+
+                <button class="rounded2 bold m-1 p-1">Log In</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="container flex bg-black ">
+
+        <div class="left bg-grey rounded">
+
+            <div class="library bg-grey rounded ">
+                <div class="heading">
+                    <img class="invert tx-grey3" src="playlist.svg" alt="Playlist icon">
+                    <h2 class="tx-grey3">Your library</h2>
+                    <p><img src="add.svg" alt="" srcset=""></p>
+                </div>
+
+                <div id="playlist" class="playlist bg-grey2 mt-1 p-1 ">
+                    <h1 class="small m-1">Create your first playlist</h1>
+                    <h2 class="smaller m-1">It's easy, we'll help you</h2>
+                    <button class="rounded2 p-1 m-1 bold">Create playlist</button>
+                </div>
+
+                <div class="podcast bg-grey2 mt-1 p-1">
+                    <h1 class="small m-1">Let's find some podcasts to follow</h1>
+                    <h2 class="smaller m-1">We'll keep you updated on new episodes</h2>
+                    <button class="rounded2 p-1 m-1 bold">Browse podcast</button>
+                </div>
+
+                <footer class="links mt-2">
+                    <div class="links">
+                        <a href="#">Legal</a>
+                        <a href="#">Safety & Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">About ads</a>
+                        <a href="#">Accessibility</a>
+                        <br>
+                        <a href="#">Cookies</a>
+                    </div>
+                    <button class="invert rounded2 m-1 p-1 ">
+                        <img class="img-smaller" src="lang.svg" alt="Language icon">
+                        <span>English</span>
+                    </button>
+                </footer>
+            </div>
+        </div>
+
+        <div class="right bg1 rounded ">
+            <div class="spotifyPlaylist p16 ">
+                <h1 class="txt">Popular artists</h1>
+                <div class="cardContainer flex m-1 p-1 bg-1">
+                    <div class="card m-1 p-1 rounded">
+                        <div class="artist">
+                            <img src="pritam.jpeg" class="round" alt="Pritam">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Pritam</h2>
+                            <p class="smaller tx-grey3">Artist</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="artist">
+                            <img src="arijitsingh.jpeg" class="round" alt="Arijit Singh">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Arijit Singh</h2>
+                            <p class="smaller tx-grey3">Artist</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card m-1 p-1">
+                        <div class="artist">
+                            <img src="arRahman.jpg" class="round" alt="A.R. Rahman">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">A.R. Rahman</h2>
+                            <p class="smaller tx-grey3">Artist</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                        </div>
+                    </div>
+                    <div class="card m-1 p-1">
+                        <div class="artist">
+                            <img src="sachin-jigar.jpeg" class="round" alt="Sachin-Jigar">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Sachin-Jigar</h2>
+                            <p class="smaller tx-grey3">Artist</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="artist">
+                            <img src="vishal-sekhar.jpeg" class="round" alt="Vishal-Shekhar">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Vishal-Shekhar</h2>
+                            <p class="smaller tx-grey3">Artist</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="artist">
+                            <img src="atifaslm.jpeg" class="round" alt="Atif Aslam">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Atif Aslam</h2>
+                            <p class="smaller tx-grey3">Artist</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+
+            <div class="albums p16 ">
+                <h1 class="txt">Popular albums and singles</h1>
+                <div class="cardContainer flex m-1 p-1 bg-1">
+                    <div class="card m-1 p-1">
+                        <div class="album">
+                            <img src="glory.jpeg" class="square rounded" alt="Glory album cover">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Glory</h2>
+                            <p class="smaller tx-grey3">Yo Yo Honey Singh</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button" data-src="glory.mp3">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="album">
+                            <img src="aashiqui.jpeg" class="square rounded" alt="Aashiqui 2 album cover">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Aashiqui 2</h2>
+                            <p class="smaller tx-grey3">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button" data-src="aashique.m4a">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="album">
+                            <img src="jawaniDiwani.jpeg" class="square rounded" alt="Ye Jawani H Deewani album cover">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Ye Jawani H Deewani</h2>
+                            <p class="smaller tx-grey3">Pritam</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button" data-src="jawani.mp3">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="album">
+                            <img src="jimn.jpeg" class="square rounded" alt="Who Remixes album cover">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Who (Remixes)</h2>
+                            <p class="smaller tx-grey3">Artist</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button" data-src="who.mp3">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="album">
+                            <img src="makingMemory.jpeg" class="square rounded" alt="Making Memories album cover">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Making Memories</h2>
+                            <p class="smaller tx-grey3">Karan Aujla, Ikky</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button" data-src="making.mp3">▶</span>
+                        </div>
+                    </div>
+                
+                    <div class="card m-1 p-1">
+                        <div class="album">
+                            <img src="mismatched.jpeg" class="square rounded" alt="Mismatched Season 3 album cover">
+                        </div>
+                        <div class="name">
+                            <h2 class="small text-white">Mismatched: Season 3</h2>
+                            <p class="smaller tx-grey3">Mismatched-Cast</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button" data-src="mismatched.mp3">▶</span>
+                        </div>
+                    </div>
+                </div>
+                   <audio id="audioPlayer"></audio>
+                
+            </div>
+
+            <div class="radios p16">
+                <h1 class="txt">Popular radios</h1>
+                <div class="cardContainer flex m-1 p-1 bg-1">
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="arjitSinghRadio.jpeg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">With Atif Aslam, Sachin-Jigar Vishal-Shekhar and more</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="spRadio.jpeg" class="square rounded" alt="SP Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">With Deva, Swarnalatha, Annamayya Keerthana...</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="DDRadio.jpeg" class="square rounded" alt="SP Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">With Karan Aujla, Shubh, Sidhu Moose Wala and more</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="llaiyaraajaRadio.jpeg" class="square rounded" alt="SP Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">With K.J.Yesudas, Swarnalatha and more</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="ShreyaRadio.jpeg" class="square rounded" alt="SP Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">With A.R. Rahman,Vishal Shekhar, Atif Aslam and more</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="KKRadio.jpeg" class="square rounded" alt="SP Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">With Armaan Malik, Ankit Tiwari, Atif Aslam and more</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="charts p16">
+                <h1 class="txt">Featured Charts</h1>
+                <div class="cardContainer flex m-1 p-1 bg-1">
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="TopSongsGlobal.jpg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Your weekly update of the most played tracks right now</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="TopSongsIndia.jpg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Your weekly update of the most played tracks right now</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+
+                    </div>
+
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Top50Global.jpg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Your daily update of the most played tracks right now</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Top50India.jpg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Your daily update of the most played tracks right now</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Viral50.jpg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Your daily update of the most played tracks right now</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Viral50India.jpg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Your daily update of the most played tracks right now</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="IndiaBest p16">
+                <h1 class="txt">India's Best</h1>
+
+                <div class="cardContainer flex m-1 p-1 bg-1">
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="ipop.jpeg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Hottest tracks from your favourite I-Pop Icons.Cover</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="bollywoodCentral.jpeg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Bollywood Central, jab baje toh seedha dil ke centre me lage</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Punjabi.jpeg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Ultimate 101 Punjabi Hits with Karan Aujha</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Kollywood.jpeg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Finest collection of Tamil Music from the past 10years Cover</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Tollywoodpearls.jpeg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Finest collection of Telugu Music from the past 10years Cover
+                            </p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+
+                    <div class="card m-1 p-1">
+                        <div class="radio">
+                            <img src="Mollywood.jpeg" class="square rounded" alt="Arijit Singh Radio">
+                        </div>
+                        <div class="name">
+                            <p class="smaller tx-grey3">Finest collection of Tamil Music from the past 10years Cover</p>
+                        </div>
+                        <div class="play-btn-wrapper">
+                            <span class="play-button">▶</span>
+                       </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="main-container flex space-between p-1 m-1 flex">
+                <div class="company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Jobs</a></li>
+                        <li><a href="">For the Records</a></li>
+                    </ul>
+                </div>
+                <div class="communities">
+                    <h3>Communities</h3>
+                    <ul>
+                        <li><a class="tx-grey2" href="">For Artists</a></li>
+                        <li><a href="">For Developers</a></li>
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Investors</a></li>
+                        <li><a href="">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="UsefulLinks">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Free Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="plans">
+                    <h3>Spotify Plans</h3>
+                    <ul>
+                        <li><a href="">Premium individual</a></li>
+                        <li><a href="">Premium Duo</a></li>
+                        <li><a href="">Premium Family</a></li>
+                        <li><a href="">Premium Student</a></li>
+                        <li><a href="">Spotify Free</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact flex  space-between p-1 m-1 ">
+                    <div class="icon-wrapper mini-rounded flex justify-center items-center">
+                        <img class=" invert big " src="insta.svg" alt="instaLogo">
+                    </div>
+                    <div class="icon-wrapper mini-rounded flex justify-center items-center">
+                        <img class="invert big " src="twitter.svg" alt="twitterLogo">
+                    </div>
+                    <div class="icon-wrapper mini-rounded flex justify-center items-center">
+                        <img class="invert big " src="facebook.svg" alt="facebookLogo">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <footer>
+                <p class="tx-grey3 top-border mt-2 p-2">© 2025 Spotify AB</p>
+            </footer>
+
+        </div>
+        <div class="gradient-footer">
+            <p>Preview of Spotify<br>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            <button class=" Sign " >Sign up free</button>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
